@@ -1,0 +1,297 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+.header{
+    font-size: 25px;
+    font-family: Arial;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+header{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial;
+    color: #8686AC;
+    padding-left: 30px;
+}
+a:hover{
+    color: white;
+    text-shadow: 0 0 20px white;
+    font-size: 28px;
+}
+article{
+    background-color: #8686AC;
+    height: 12px;
+}
+
+section
+{
+    background-color: #BDDDFC;
+}
+.self
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 30px;
+}
+.wishes
+{
+    color: BLACK;
+    font-family: Arial;
+    font-size: 35px;
+    padding: 50px 0px 0px 60px;
+}
+.name
+{
+    color: blue;
+    font-size: 50px;
+    font-family: georgia;
+    padding: 15px 0px 0px 60px;
+}
+.learning
+{
+    color: rgb(54, 46, 46);
+    font-size: 20px;
+    font-family: georgia;
+    padding: 15px 0px 0px 60px;
+}
+.intro{
+    padding:0px 0px 50px 0px;
+}
+.mypic{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+section header{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0 0 20px black;
+    width: 90%; 
+    padding: 20px;
+    height: auto;
+    margin: 0 auto;
+    gap: 20px;
+}
+.card
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.psection
+{
+    box-shadow: 0 0 20px black;
+    padding: 0px 15px;
+    background-color: #8686AC;
+    color: white;
+    width: 250px;
+    border-radius: 10px;
+}
+.psection>p{
+    text-align:justify;
+}
+.psection:hover
+{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px blue;
+    text-shadow: 0 0 20px white;
+}
+.psection div{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.esection
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%; 
+    padding: 20px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.ecard
+{
+    padding:20px;
+    background-color: black;
+    text-shadow: 0 0 20px white;
+    color: white;
+    box-shadow: 0 0 10px blue;
+}
+.ecard>p{
+    font-size: 20px;
+}
+.ecard:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px black;
+    font-size: 25px;
+}
+.techsection{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+.techsection>a{
+    border-radius: 30px;
+    background-color: #8686AC;
+    color: black;
+    padding: 20px;
+    padding: 0px auto;
+    font-size: 20px;
+}
+.techsection>a:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px blue;
+    text-shadow: 0 0 20px white;
+}
+footer{
+    background-color: black;
+    color: #8686AC;
+    padding: 25px;
+    text-align: center;
+}
+footer>span
+{
+    font-size: 25px;
+}
+footer>a:hover
+{
+    text-shadow: 0 0 20px white;
+}
+footer>span:hover
+{
+    color: white;
+    text-shadow: 0 0 20px white;
+}
+@media (max-width: 480px) 
+{
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .left
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .right
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .left>a{
+        font-size: 1.6rem;
+        padding-bottom: 0.5rem;
+    }
+    .right>a {
+        font-size: 1.2rem;
+        padding-left: 0.1rem;
+    }
+    article
+    {
+        height: 0.5rem;
+    }
+    .self {
+        grid-template-columns: 1fr;
+    }
+    .wishes, .name, .learning {
+        padding:0.8rem 1.5rem 0.4rem 1.5rem ;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+    .mypic {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0.8rem;
+    }
+    .project {
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        padding: 1rem;
+    }
+    .card
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .psection {
+        padding: 0rem 0.5rem 0.5rem 0.5rem ;
+        width: 90%;
+        margin:1rem auto;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+    section{
+        width: 100%;
+
+    }
+    .psection>div {
+        font-size: 1rem;
+        padding-top: 0;
+    }
+    .psection>p {
+        font-size: 1rem;
+    }
+    .esection {
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 10px;
+    }
+    .ecard {
+        font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+    }
+    .techsection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .techsection>a {
+        width: 80%;
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    footer
+    {
+        padding: 1rem;
+    }
+    footer>span{
+        padding-bottom: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer>span {
+        font-size: 1rem;
+    }
+}
